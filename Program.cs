@@ -40,6 +40,14 @@ do
         Console.ReadKey();
         continue;
     }
+    catch(ArgumentException ex)
+    {
+        Console.Clear();
+        Console.WriteLine(ex.Message);
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+        continue;
+    }
     catch(Exception ex)
     {
         Console.Clear();
